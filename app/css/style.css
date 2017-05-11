@@ -1,0 +1,93 @@
+@import "./reset.css";
+
+body{
+  font-family: 'Roboto', arial, sans-serif!important;
+  font-weight:500;
+}
+
+#root{
+  padding-top:80px;
+}
+
+h1{
+  font-size: 27px;
+  color: #231F1F;
+}
+
+hr{
+  border: 1px solid color(#979797 alpha(6%));
+  margin: 2rem 0!important;
+}
+
+.espas{
+  padding-left: 39px;
+  padding-right: 39px;
+}
+
+.header{
+  margin-top:29px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: rgba(57,65,68,0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header p{
+  font-size: 18px;
+  font-weight:500;
+  color: rgba(24,35,38,0.50);
+}
+
+.fonts{
+  display:flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  color: rgba(35,31,32,0.40);
+
+  & > *{
+    text-align:center;
+    flex: 0 0 20%;
+    margin-bottom: 20px;
+  }
+  img{
+    width:128px;
+    height:128px;
+    display: block;
+    box-shadow: 0 4px 9px 0 rgba(0,0,0,0.20);
+    margin: 10px auto;
+  }
+}
+
+.userFonts{
+  display:flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  color: rgba(35,31,32,0.40);
+  & > *{
+    text-align:center;
+    flex: 0 0 20%;
+    margin-bottom: 20px;
+  }
+  & p{
+    width:128px;
+    height:128px;
+    box-shadow: 0 4px 9px 0 rgba(0,0,0,0.20);
+    margin: 10px auto;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+  }
+}
+
+.button{
+  background: #03A9F4;
+  font-size: 16px;
+  color: #FFFFFF;
+}

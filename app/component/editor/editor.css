@@ -1,0 +1,121 @@
+.tabContainer{
+  margin-top:30px;
+}
+
+.link{
+  margin-top:15px;
+  font-size:14px;
+}
+
+.letters{
+  display:flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.newLetter{
+  flex: 0 0 120px;
+  margin:15px 15px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  position:relative;
+  cursor:pointer;
+  background: color(#ebecec alpha(100%));
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.letter{
+  flex: 0 0;
+  margin:15px 15px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  position:relative;
+  padding: 10px;
+  cursor:pointer;
+  &.active{
+    cursor:auto;
+    background: color(#ebecec alpha(100%));
+    .sel{display:none;}
+    .filled{
+      outline: 1px solid color(#ebecec alpha(70%));
+    }
+    .empty{
+      outline: 1px solid color(#ebecec alpha(70%));
+    }
+  }
+  & button {
+    cursor:cell;
+    width:20px;
+    height:20px;
+    border:0;
+    outline-offset: -1px;
+    &.filled{
+      outline: 1px solid color(#ebecec alpha(20%));
+      background:color(#1f2f35 alpha(90%));
+    }
+    &.empty{
+      background:color(#fff alpha(90%));
+    }
+    &:focus{
+      outline: 2px solid #49a9ee!important;
+    }
+    &:hover{
+      box-shadow: inset 20px 20px color(#aaa alpha(50%));
+    }
+  }
+  & .add{
+    position:absolute;
+    top:0;
+    right:0px;
+    width: 10px;
+    height:100%;
+    background:none;
+    border:0;
+    outline:0;
+    cursor:e-resize;
+  }
+  & .remove{
+    position:absolute;
+    top:0;
+    left:0px;
+    width: 10px;
+    height:100%;
+    background:none;
+    border:0;
+    outline:0;
+    cursor:w-resize;
+  }
+  .sel{
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    cursor:pointer;
+    background: color(#ebecec alpha(5%));
+  }
+}
+
+textarea{
+  width:100%;
+  height:50vh;
+  border:1px solid #d9d9d9;
+  padding:10px;
+}
+
+.key{
+  position:absolute;
+  left:50%;
+  bottom:0;
+  transform: translate3d(-50%, 100%, 0);
+  opacity:0.7;
+  font-weight:300;
+  font-size:12px;
+  pointer-events:none;
+}
+
+.settings [class^=col]{
+  margin-top:20px;
+}

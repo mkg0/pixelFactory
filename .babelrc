@@ -1,0 +1,11 @@
+{
+  "presets": [
+    ["es2015", { "modules": false }],
+    "react"
+  ],
+  "ignore": [
+  ],
+  "plugins": [
+    "react-hot-loader/babel"
+  ]
+}
