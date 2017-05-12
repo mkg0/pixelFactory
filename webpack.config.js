@@ -8,8 +8,7 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, "docs"),
-    filename: "[name].js",
-    publicPath: "/"
+    filename: "[name].js"
   },
   module: {
     rules: [
@@ -25,7 +24,14 @@ module.exports = {
       {
         test: /\.png$/,
         use: [
-          "file-loader?hash=sha512&digest=hex&name=[hash].[ext]",
+          {
+            loader: "file-loader",
+            query: {
+              // publicPath: prod ? "/docs/" : "/",
+              hash: "sha512",
+              name: "[hash].[ext]"
+            }
+          },
           {
             loader: "image-webpack-loader",
             query: {
@@ -44,7 +50,7 @@ module.exports = {
   devServer: {
     hot: true,
     contentBase: path.join(__dirname, "docs"),
-    publicPath: "/",
+    publicPath: "/docs/",
     historyApiFallback: true,
     port: 8080,
     headers: {

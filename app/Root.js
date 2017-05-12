@@ -10,7 +10,7 @@ export default class Root extends React.Component {
   render() {
     return (
       <Layout>
-        <Router>
+        <Router basename="/docs/">
           <div>
             <Route exact path="/" component={IndexContainer} />
             <Route path="/defined/:name" component={DefinedContainer} />
