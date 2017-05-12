@@ -7,7 +7,7 @@ module.exports = {
     main: hotInject("./app/index.js")
   },
   output: {
-    path: path.join(__dirname, "www"),
+    path: path.join(__dirname, "docs"),
     filename: "[name].js",
     publicPath: "/"
   },
@@ -43,7 +43,7 @@ module.exports = {
   devtool: prod ? "source-map" : "eval-source-map",
   devServer: {
     hot: true,
-    contentBase: path.join(__dirname, "www"),
+    contentBase: path.join(__dirname, "docs"),
     publicPath: "/",
     historyApiFallback: true,
     port: 8080,
