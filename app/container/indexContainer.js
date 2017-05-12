@@ -3,7 +3,7 @@ import fonts from "../fonts";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
-import Prompt from "../component/prompt.jsx";
+import Prompt from "../component/prompt";
 import Button from "antd/lib/button";
 
 class IndexView extends Component {

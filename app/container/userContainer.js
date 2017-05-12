@@ -1,5 +1,5 @@
 import React from "react";
-import Editor from "component/editor/editor.jsx";
+import Editor from "component/editor/editor";
 import PropTypes from "prop-types";
 
 import { exportFont } from "../lib";

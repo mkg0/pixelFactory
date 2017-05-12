@@ -2,10 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import { withRouter } from "react-router-dom";
 
-import Letter from "./letter.jsx";
+import Letter from "./letter";
 import "./editor.css";
 
-import Prompt from "../prompt.jsx";
+import Prompt from "../prompt";
 import Tabs from "antd/lib/tabs";
 import "./icons.css";
 import "antd/lib/tooltip/style/index.css";
@@ -155,7 +155,9 @@ class Editor extends React.Component {
     var newDataSet = Object.assign({}, dataSet);
     var newLetter = {
       key: "new",
-      pixels: Array(...Array(dataSet.lineHeight ** 2)).map(() => 0)
+      pixels: Array(...Array(dataSet.lineHeight * dataSet.lineHeight)).map(
+        () => 0
+      )
     };
     newDataSet.letters.push(newLetter);
     this.setState({
