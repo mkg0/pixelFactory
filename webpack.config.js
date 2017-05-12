@@ -27,7 +27,6 @@ module.exports = {
           {
             loader: "file-loader",
             query: {
-              // publicPath: prod ? "/docs/" : "/",
               hash: "sha512",
               name: "[hash].[ext]"
             }
@@ -49,8 +48,8 @@ module.exports = {
   devtool: prod ? "source-map" : "eval-source-map",
   devServer: {
     hot: true,
-    contentBase: path.join(__dirname, "docs"),
-    publicPath: "/docs/",
+    contentBase: path.join(__dirname, "dev"),
+    publicPath: prod ? "/pixelFactory/" : "/",
     historyApiFallback: true,
     port: 8080,
     headers: {
