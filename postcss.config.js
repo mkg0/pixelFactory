@@ -1,6 +1,7 @@
 module.exports = {
-    plugins: [
-        require('precss'),
-        require('autoprefixer')
-    ]
-}
+  plugins: [
+    require("postcss-import"),
+    require("precss"),
+    require("autoprefixer")
+  ]
+};

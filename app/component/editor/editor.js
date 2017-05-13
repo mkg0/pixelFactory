@@ -5,24 +5,15 @@ import { withRouter } from "react-router-dom";
 import Letter from "./letter";
 import "./editor.css";
 
+import { StickyContainer, Sticky } from "react-sticky";
 import Prompt from "../prompt";
 import Tabs from "antd/lib/tabs";
-import "./icons.css";
-import "antd/lib/tooltip/style/index.css";
-import "antd/lib/tabs/style/index.css";
 import Button from "antd/lib/button";
-import "antd/lib/button/style/index.css";
 import Slider from "antd/lib/slider";
-import "antd/lib/slider/style/index.css";
 import Input from "antd/lib/input";
-import "antd/lib/input/style/index.css";
 import Switch from "antd/lib/switch";
-import "antd/lib/switch/style/index.css";
-import { StickyContainer, Sticky } from "react-sticky";
 import Modal from "antd/lib/modal";
-import "antd/lib/modal/style/index.css";
 
-// export default props => <div>asdf</div>;
 var Tab = Tabs.TabPane;
 class Editor extends React.Component {
   static selectedLetter;

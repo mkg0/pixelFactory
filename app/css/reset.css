@@ -5,6 +5,7 @@
 }
 html {
   box-sizing: border-box;
+  height:auto!important;
 }
 
 body {
